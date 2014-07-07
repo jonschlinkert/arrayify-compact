@@ -1,0 +1,51 @@
+{
+  "name": "arrayify-compact",
+  "description": "Similar to Lo-Dash's compact method, but coerces values to arrays first, then returns a flattened array with all falsey values removed. The values false, null, 0, \"\", undefined, and NaN are all falsey.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/arrayify-compact",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/arrayify-compact.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/arrayify-compact/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonschlinkert/arrayify-compact/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "array",
+    "arrayify",
+    "boolean",
+    "compact",
+    "falsey",
+    "flat",
+    "flatten",
+    "flattened",
+    "to-array",
+    "toArray",
+    "values"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "verb": ">= 0.2.6",
+    "chai": ">= 1.9.1",
+    "mocha": "*"
+  },
+  "dependencies": {
+    "array-flatten": ">= 0.0.2"
+  }
+}
