@@ -1,15 +1,8 @@
-/*!
- * arrayify-compact <https://github.com/jonschlinkert/arrayify-compact>
- *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
- * Licensed under the MIT License
- */
-
 'use strict';
 
-var flatten = require('array-flatten');
+var flatten = require('arr-flatten');
 
-module.exports = function(arr) {
-  return flatten(!Array.isArray(arr) ? [arr] : arr)
-    .filter(Boolean);
+module.exports = function arrayify(val) {
+  val = Array.isArray(val) ? val : [val];
+  return flatten(val).filter(Boolean);
 };

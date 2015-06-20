@@ -1,7 +1,7 @@
 {
   "name": "arrayify-compact",
-  "description": "Similar to Lo-Dash's compact method, but coerces values to arrays first, then returns a flattened array with all falsey values removed. The values false, null, 0, \"\", undefined, and NaN are all falsey.",
-  "version": "0.1.0",
+  "description": "Casts the given value to a flatten array, and removes falsey items (similar to lodash compact).",
+  "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/arrayify-compact",
   "author": {
     "name": "Jon Schlinkert",
@@ -14,12 +14,35 @@
   "bugs": {
     "url": "https://github.com/jonschlinkert/arrayify-compact/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/jonschlinkert/arrayify-compact/blob/master/LICENSE-MIT"
-    }
+  "license": "MIT",
+  "files": [
+    "index.js"
   ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "verb": "^0.8.6"
+  },
+  "dependencies": {
+    "arr-flatten": "^1.0.1"
+  },
+  "verbiage": {
+    "related": {
+      "description": "Other utils for working with arrays.",
+      "list": [
+        "arr-flatten",
+        "arr-reduce",
+        "arr-pluck",
+        "arr-map",
+        "arr-union",
+        "array-unique",
+        "utils"
+      ]
+    }
+  },
   "keywords": [
     "array",
     "arrayify",
@@ -32,20 +55,5 @@
     "to-array",
     "toArray",
     "values"
-  ],
-  "main": "index.js",
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "mocha -R spec"
-  },
-  "devDependencies": {
-    "verb": ">= 0.2.6",
-    "chai": ">= 1.9.1",
-    "mocha": "*"
-  },
-  "dependencies": {
-    "array-flatten": ">= 0.0.2"
-  }
+  ]
 }

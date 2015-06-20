@@ -1,14 +1,14 @@
 /*!
  * arrayify-compact <https://github.com/jonschlinkert/arrayify-compact>
  *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
+ * Copyright (c) 2015 Jon Schlinkert
  * Licensed under the MIT License
  */
 
 'use strict';
 
 var assert = require('assert');
-var arrayify = require('../');
+var arrayify = require('./');
 
 describe('arrayify', function () {
   it('should arrayify the value', function () {
