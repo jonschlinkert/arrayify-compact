@@ -46,6 +46,6 @@
     "mocha": "*"
   },
   "dependencies": {
-    "array-flatten": ">= 0.0.2"
+    "array-flatten": "^2.1.2"
   }
 }
