@@ -1,7 +1,7 @@
 {
   "name": "arrayify-compact",
   "description": "Similar to Lo-Dash's compact method, but coerces values to arrays first, then returns a flattened array with all falsey values removed. The values false, null, 0, \"\", undefined, and NaN are all falsey.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/arrayify-compact",
   "author": {
     "name": "Jon Schlinkert",
